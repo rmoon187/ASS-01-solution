@@ -210,14 +210,13 @@ iframe {
 /* target sec */
 .target {
     width: 1140px;
-    height: 460px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     padding: 0px;
-    margin: 150px auto
-    
+    margin: 150px auto;
+    position: relative;
 }
 
 .target-text {
@@ -294,16 +293,85 @@ iframe {
 
 }
 
+
+/* support sec */
 .support {
     border-radius: 16px;
-    background: rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.2);
+    background-blend-mode: overlay;
     width: 1140px;
     height: 313px;
-    padding: 64px 48px 64px 48px;
+    padding: 64px 48px;
     background-image: url("assets/handshake.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin: 49px auto;
+    margin: 100px auto;
+    position: relative;
+    z-index: 1;
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.support-title {
+    color: rgb(255, 255, 255);
+    font-family: "Azeret Mono";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 16px 0px;
+}
+
+.support-des {
+    color: rgb(255, 255, 255);
+    font-family: "Azeret Mono";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: center;
+    opacity: 0.7;
+
+}
+
+input[type="text"] {
+    box-sizing: border-box;
+    border: 1px solid rgba(13, 19, 33, 0.15);
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    width: 548px;
+    height: 57px;
+    padding: 19px 20px 19px 20px;
+    margin: 0px 16px;
+}
+
+input[placeholder] {
+    color: rgba(13, 19, 33, 0.4);
+    font-family: "Azeret Mono";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+input[type="submit"] {
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    width: 120px;
+    height: 57px;
+    padding: 17px 20px 17px 20px;
+    margin: 0px 16px;
+    color: rgb(13, 19, 33);
+    font-family: "Azeret Mono";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: center;
 }
