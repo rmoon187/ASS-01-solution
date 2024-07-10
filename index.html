@@ -17,7 +17,7 @@
         <h1>"In the near future, I hope to become a Developer."</h1>
         <p>Becoming a developer is my aspiration, driven by a passion for technology and innovation. I am committed to
             honing my skills and contributing to the ever-evolving tech landscape.</p>
-        <button>Contact with me</button>
+        <button id="scroll">Contact with me</button>
 
     </header>
 
@@ -131,16 +131,22 @@
         </main>
 
         <!-- footer -->
-         <footer>
+         <footer id="connect">
             <div class="footer-des">
                 <p>An Open Commitment by Rabiul Hasan</p>
             </div>
             <div class="social">
-                <a href="https://www.facebook.com/Rmoon187/"><img src="assets/facebook.png" alt=""></a>
-                <a href="https://github.com/rmoon187"><img src="assets/github.png" alt=""></a>
-                <a href="https://www.linkedin.com/in/rabiul-hasan-624a35217/"><img src="assets/linkedin-icon 1.png" alt=""></a>
+                <a href="https://www.facebook.com/Rmoon187/" target="_blank"><img src="assets/facebook.png" alt=""></a>
+                <a href="https://github.com/rmoon187" target="_blank"><img src="assets/github.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/rabiul-hasan-624a35217/" target="_blank"><img src="assets/linkedin-icon 1.png" alt=""></a>
             </div>
          </footer>
+         <script>
+            document.getElementById('scroll').onclick = function() {
+              document.getElementById('connect').scrollIntoView({ behavior: 'smooth' });
+            };
+          </script>
+          
 </body>
 
 </html>
